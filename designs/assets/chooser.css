@@ -1,0 +1,23 @@
+/* (c) 2026. Preview 0d85c65bf113796c. Not licensed. */
+.chooser main { padding: 56px var(--gut) 72px; }
+.ch-head { margin-bottom: 40px; }
+.ch-head img { width: 280px; height: auto; }
+.chooser h1 { max-width: 20ch; }
+.opts { list-style: none; margin: 32px 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.opt { display: flex; flex-direction: column; gap: 8px; height: 100%; padding: 28px; border: 2px solid var(--line); border-radius: var(--r); text-decoration: none; color: var(--ink); background: var(--surface); }
+.opt:hover { border-color: var(--ink); color: var(--ink); }
+.opt strong { font: 700 1.625rem/1.15 var(--font); }
+.opt .line { color: var(--panel); }
+.opt .bars { display: block; margin-top: auto; padding-top: 16px; }
+.opt .bars i { display: block; height: 8px; margin-bottom: 6px; border-radius: 2px; }
+.opt .bars i:nth-child(1) { background: var(--blue); width: 60%; }
+.opt .bars i:nth-child(2) { background: var(--green); width: 60%; margin-left: 20%; }
+.opt .bars i:nth-child(3) { background: var(--amber); width: 60%; margin-left: 40%; }
+.opt-b .bars i { width: 100%; margin-left: 0; }
+.opt-c .bars i:nth-child(1), .opt-c .bars i:nth-child(2) { width: 100%; margin-left: 0; }
+.chooser .draft { color: var(--panel); }
+@media (max-width: 820px) { .opts { grid-template-columns: 1fr; } }
+.opt .tag { margin-left: 8px; padding: 2px 8px; border-radius: 999px; font-size: .8125rem; font-weight: 700; vertical-align: middle; }
+.opt .tag-rec { background: var(--amber); color: var(--ink); }
+.opt .tag-alt { background: var(--blue-wash); color: var(--ink); }
+.chooser .why { font-weight: 700; max-width: 60ch; }
